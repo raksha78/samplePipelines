@@ -14,7 +14,7 @@ pipelines:
           onStart:
             - echo "executing onStart"
           onExecute:
-            - sleep 2s
+            - write_output valueStore key:value
       - name: jenkinsStep
         type: Jenkins
         configuration:
