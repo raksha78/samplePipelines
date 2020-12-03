@@ -4,7 +4,7 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          timeoutSeconds: 2s
+          timeoutSeconds: 2
           jenkinsJobName: testPipeline
           buildParameters:
             foo1: bar1
