@@ -1,0 +1,9 @@
+pipelines:
+  - name: testJenkins
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: failPipeline  
+          integrations:
+            - name: jenkins
