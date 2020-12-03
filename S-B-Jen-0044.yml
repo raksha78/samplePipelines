@@ -1,0 +1,13 @@
+pipelines:
+  - name: testJenkins
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+          timeoutSeconds: 2s
+          jenkinsJobName: testPipeline
+          buildParameters:
+            foo1: bar1
+            foo2: bar2  
+          integrations:
+            - name: jenkins
