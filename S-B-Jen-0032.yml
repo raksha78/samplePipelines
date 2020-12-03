@@ -24,7 +24,5 @@ pipelines:
           inputResources:
             - name: valueStore
           jenkinsJobName: testPipeline
-          buildParameters:
-            foo1: bar1 
           integrations:
             - name: jenkins
