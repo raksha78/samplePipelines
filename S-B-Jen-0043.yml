@@ -2,10 +2,7 @@ pipelines:
   - name: testJenkins
     steps:
       - name: bashStep
-        type: Bash 
-        configuration:
-          inputSteps:
-            - name: testStepJenkins
+        type: Bash
         execution:
           onStart:
             - echo "executing onStart"
@@ -15,6 +12,8 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
+          inputSteps:
+            - name: bashStep
           jenkinsJobName: testPipeline
           buildParameters:
             foo1: bar1
