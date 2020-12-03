@@ -4,8 +4,6 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          inputSteps:
-            - name: reqStepJenkins
           jenkinsJobName: var_multibranch_jenkins  
           integrations:
             - name: jenkins
