@@ -1,5 +1,5 @@
 pipelines:
-  - name: test_Jenkins
+  - name: testJenkinsTrigger
     steps:
       - name: testStepJenkins
         type: Jenkins
