@@ -13,10 +13,7 @@ pipelines:
         configuration:
           inputSteps:
             - name: firstBashStep
-          jenkinsJobName: testPipeline
-          buildParameters:
-            foo1: bar1
-            foo2: bar2  
+          jenkinsJobName: testPipeline 
           integrations:
             - name: jenkins
       - name: secondBashStep
