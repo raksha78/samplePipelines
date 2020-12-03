@@ -5,8 +5,5 @@ pipelines:
         type: Jenkins
         configuration:
           jenkinsJobName: var_freestyle_proj
-          buildParameters:
-            foo1: bar1
-            foo2: bar2  
           integrations:
             - name: jenkins
