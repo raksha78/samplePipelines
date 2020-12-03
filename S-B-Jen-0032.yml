@@ -10,7 +10,7 @@ pipelines:
       - name: bashStep
         type: Bash 
         outputResources:
-            - name: valueStore
+          - name: valueStore
         execution:
           onStart:
             - echo "executing onStart"
