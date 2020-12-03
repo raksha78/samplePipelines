@@ -1,0 +1,20 @@
+pipelines:
+  - name: testJenkins
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+          inputSteps:
+            - name: reqStepJenkins
+          jenkinsJobName: testPipeline
+          buildParameters:
+            foo1: bar1
+            foo2: bar2  
+          integrations:
+            - name: jenkins
+      - name: reqStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: testPipeline  
+          integrations:
+            - name: jenkins
