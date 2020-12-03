@@ -1,0 +1,22 @@
+pipelines:
+  - name: test_Jenkins
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: testPipeline
+          buildParameters:
+            foo1: bar1
+            foo2: bar2  
+          integrations:
+            - name: jenkins
+      - name: testBashStep
+        type: Bash 
+        configuration:
+          inputSteps:
+            - name: testStepJenkins
+        execution:
+          onStart:
+            - echo "executing onStart"
+          onExecute:
+            - sleep 5s
