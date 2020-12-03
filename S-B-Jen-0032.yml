@@ -2,7 +2,8 @@ resources:
   - name: valueStore
     type: PropertyBag
     configuration:
-      foo: bar
+      bashStep: env1
+      jenkinsStep: env2
 pipelines:
   - name: testJenkins
     steps:
