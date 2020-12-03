@@ -15,8 +15,5 @@ pipelines:
           inputSteps:
             - name: bashStep
           jenkinsJobName: testPipeline
-          buildParameters:
-            foo1: bar1
-            foo2: bar2  
           integrations:
             - name: jenkins
