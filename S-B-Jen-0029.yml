@@ -1,0 +1,25 @@
+pipelines:
+  - name: testJenkins
+    steps:
+      - name: firstStepJenkins
+        type: Jenkins
+        configuration:
+          inputSteps:
+            - name: reqStepJenkins
+          jenkinsJobName: testPipeline  
+          integrations:
+            - name: jenkins
+      - name: secondStepJenkins
+        type: Jenkins
+        configuration:
+          inputSteps:
+            - name: reqStepJenkins
+          jenkinsJobName: testPipelineUpdated  
+          integrations:
+            - name: jenkins
+      - name: reqStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: testPipeline  
+          integrations:
+            - name: jenkins
