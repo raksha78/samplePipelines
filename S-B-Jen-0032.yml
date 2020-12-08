@@ -5,7 +5,7 @@ resources:
       key: value
       foo: bar
 pipelines:
-  - name: testJenkinsOR
+  - name: testJenkins
     steps:
       - name: bashStep
         type: Bash 
