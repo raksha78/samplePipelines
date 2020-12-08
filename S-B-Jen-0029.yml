@@ -1,6 +1,12 @@
 pipelines:
   - name: testJenkins
     steps:
+      - name: reqStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: testPipeline  
+          integrations:
+            - name: jenkins
       - name: firstStepJenkins
         type: Jenkins
         configuration:
@@ -17,9 +23,4 @@ pipelines:
           jenkinsJobName: testPipelineUpdated  
           integrations:
             - name: jenkins
-      - name: reqStepJenkins
-        type: Jenkins
-        configuration:
-          jenkinsJobName: testPipeline  
-          integrations:
-            - name: jenkins
+      
