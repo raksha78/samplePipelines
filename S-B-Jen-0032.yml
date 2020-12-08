@@ -1,5 +1,5 @@
 resources:
-  - name: valueStore
+  - name: valueBag
     type: PropertyBag
     configuration:
       key: value
@@ -11,7 +11,7 @@ pipelines:
         type: Bash 
         configuration:
           outputResources:
-            - name: valueStore
+            - name: valueBag
         execution:
           onStart:
             - echo "executing onStart"
@@ -21,7 +21,7 @@ pipelines:
         type: Jenkins
         configuration:
           inputResources:
-            - name: valueStore
+            - name: valueBag
           jenkinsJobName: testPipelineOR
           integrations:
             - name: jenkins        
