@@ -2,27 +2,26 @@ resources:
   - name: valueStore
     type: PropertyBag
     configuration:
-      bashStep: env1
-      jenkinsStep: env2
+      key: value
+      foo: bar
 pipelines:
-  - name: testJenkins
+  - name: testJenkinsOR
     steps:
       - name: bashStep
         type: Bash 
-        outputResources:
-          - name: valueStore
+        configuration:
+          outputResources:
+            - name: valueStore
         execution:
           onStart:
             - echo "executing onStart"
-          onExecute:
-            - write_output valueStore key:value
+#           onExecute:
+#             - write_output valueStore "key=\"value\""
       - name: jenkinsStep
         type: Jenkins
         configuration:
-          inputSteps:
-            - name: bashStep
           inputResources:
             - name: valueStore
-          jenkinsJobName: testPipeline
+          jenkinsJobName: testPipelineOR
           integrations:
-            - name: jenkins
+            - name: jenkins        
