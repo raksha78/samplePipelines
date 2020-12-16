@@ -6,4 +6,4 @@ pipelines:
         configuration:
           jenkinsJobName: var_multibranch_jenkins  
           integrations:
-            - name: i_testJenkins
+            - name: jenkins
