@@ -1,0 +1,10 @@
+pipelines:
+  - name: test_Pipeline
+    steps:
+      - name: testBashStep
+        type: Bash
+        configuration:
+          nodePool: dynamicGCP
+        execution:
+          onExecute:
+            - echo "hello"
