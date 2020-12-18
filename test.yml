@@ -4,7 +4,7 @@ pipelines:
       - name: testBashStep
         type: Bash
         configuration:
-          nodePool: k8_dynamic_c8
+          nodePool: centosk8s
         execution:
           onExecute:
             - echo "hello"
