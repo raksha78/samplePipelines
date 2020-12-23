@@ -8,6 +8,7 @@ pipelines:
         execution:
           onExecute:
             - echo "hello"
+            - sleep 100s
 # pipelines:
 
 #   - name: S_WF_030
