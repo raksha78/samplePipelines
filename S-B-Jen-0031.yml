@@ -1,5 +1,7 @@
 pipelines:
   - name: testJenkins
+    configuration:
+      nodePool: u16dynamic
     steps:
       - name: firstBashStep
         type: Bash 
