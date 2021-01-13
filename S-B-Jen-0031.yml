@@ -15,7 +15,7 @@ pipelines:
             - name: firstBashStep
           jenkinsJobName: testPipeline 
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
       - name: secondBashStep
         type: Bash 
         configuration:
