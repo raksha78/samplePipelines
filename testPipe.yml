@@ -1,0 +1,14 @@
+pipelines:
+  - name: testPipe
+    configuration:
+      nodePool: K8NP_
+    steps:
+      - name: testStepBash
+        type: Bash
+        configuration:
+        execution:
+          onStart:
+            - echo "executing onStart"
+          onExecute:
+            - echo "executing onExecute"
+            #- sleep 20s
