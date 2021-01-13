@@ -1,5 +1,5 @@
 pipelines:
-  - name: testPipe
+  - name: testPipe_
     configuration:
       nodePool: K8NP_
     steps:
