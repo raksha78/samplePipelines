@@ -5,7 +5,7 @@ pipelines:
     steps:
       - name: testStepBash
         type: Bash
-        configuration:
+#         configuration:
         execution:
           onStart:
             - echo "executing onStart"
