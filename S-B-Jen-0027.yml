@@ -1,10 +1,20 @@
+# pipelines:
+#   - name: testJenkinsTrigger
+#     steps:
+#       - name: testStepJenkins
+#         type: Jenkins
+#         configuration:
+#           jenkinsJobName: sampleJob  
+#           integrations:
+#             - name: S_B_Jenkins
 pipelines:
   - name: testJenkinsTrigger
     steps:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          jenkinsJobName: sampleJob  
+          jenkinsJobName: multiBranch  
+          jenkinsBranchName: jenkins
           integrations:
             - name: S_B_Jenkins
 
