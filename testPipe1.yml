@@ -5,7 +5,7 @@ pipelines:
       - name: testBashStep
         type: Bash
         configuration:
-          nodePool: centOS8
+          nodePool: centOS_8
         execution:
           onExecute:
             - echo "hello"
