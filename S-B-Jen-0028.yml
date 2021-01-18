@@ -8,10 +8,10 @@ pipelines:
             - name: reqStepJenkins
           jenkinsJobName: testPipeline  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
       - name: reqStepJenkins
         type: Jenkins
         configuration:
           jenkinsJobName: testPipeline  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
