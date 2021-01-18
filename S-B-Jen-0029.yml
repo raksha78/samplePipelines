@@ -6,7 +6,7 @@ pipelines:
         configuration:
           jenkinsJobName: testPipeline  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
       - name: firstStepJenkins
         type: Jenkins
         configuration:
@@ -14,7 +14,7 @@ pipelines:
             - name: reqStepJenkins
           jenkinsJobName: testPipeline  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
       - name: secondStepJenkins
         type: Jenkins
         configuration:
@@ -22,5 +22,5 @@ pipelines:
             - name: reqStepJenkins
           jenkinsJobName: testPipelineUpdated  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
       
