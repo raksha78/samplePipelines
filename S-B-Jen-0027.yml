@@ -23,7 +23,7 @@ pipelines:
         configuration:
           priority: 3
           inputSteps: 
-            name: S_B_Jen_0003
+            - name: S_B_Jen_0003
           jenkinsJobName: testPipeline
           integrations:
             - name: S_B_Jenkins
@@ -32,7 +32,7 @@ pipelines:
         configuration:
           priority: 2
           inputSteps: 
-            name: S_B_Jen_0003
+            - name: S_B_Jen_0003
           jenkinsJobName: testPipeline
           integrations:
             - name: S_B_Jenkins
