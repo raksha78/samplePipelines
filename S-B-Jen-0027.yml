@@ -14,7 +14,7 @@ pipelines:
         type: Jenkins
         configuration:
           jenkinsJobName: multiBranch  
-          jenkinsBranchName: jenkins
+          jenkinsBranchName: jenkins/
           buildParameters:
            runNumber: 1
            imageName: test
