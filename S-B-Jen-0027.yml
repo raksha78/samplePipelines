@@ -15,6 +15,10 @@ pipelines:
         configuration:
           jenkinsJobName: multiBranch  
           jenkinsBranchName: jenkins
+          buildParameters:
+           runNumber: 1
+           imageName: test
+           imageTag: test
           integrations:
             - name: S_B_Jenkins
 
