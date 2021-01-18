@@ -1,0 +1,11 @@
+
+pipelines:
+  - name: test
+    steps:
+      - name: testBashStep
+        type: Bash
+        configuration:
+          nodePool: dynamic_u16
+        execution:
+          onExecute:
+            - echo "hello"
