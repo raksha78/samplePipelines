@@ -16,4 +16,4 @@ pipelines:
         configuration:
           jenkinsJobName: testPipeline
           integrations:
-            - name: S_B_jenkins
+            - name: S_B_Jenkins
