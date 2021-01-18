@@ -6,4 +6,4 @@ pipelines:
         configuration:
           jenkinsJobName: var_freestyle_proj
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
