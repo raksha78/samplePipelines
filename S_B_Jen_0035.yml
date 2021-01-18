@@ -1,19 +1,30 @@
+resources:
+  - name: PB_rsc
+    type:       PropertyBag
+    configuration:
+      <string>: <string>
+      <string>: <string>
 pipelines:
   - name: testJen
     steps:
       - name: bashStep
         type: Bash
+        configuration:
+          inputResources:
+            - name: PB_rsc
         execution:
           onStart:
             - echo "executing onStart"
           onExecute:
             - sleep 5s
-            - cat sample.sh
+#             - cat sample.sh
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          inputSteps:
-            - name: bashStep
+#           inputSteps:
+#             - name: bashStep
+          outputResources:
+            - name: PB_rsc
           jenkinsJobName: testPipeline
           integrations:
             - name: jenkins
