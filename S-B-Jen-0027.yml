@@ -8,12 +8,15 @@
 #           integrations:
 #             - name: jenkins
 pipelines:
-  - name: S_B_Jen_0001_pipelines
-
+  - name: S_B_Jen_0002_pipelines
     steps:
-      - name: S_B_Jen_0001
+      - name: S_B_Jen_0002                 
         type: Jenkins
         configuration:
-          jenkinsJobName: testPipeline
+          jenkinsJobName: testPipeline  
+          jenkinsBranchName: test 
+          buildParameters:
+            key1: value1
+            key2: value2            
           integrations:
-            - name: S_B_Jenkins
+            - name: S_B_Jenkins 
