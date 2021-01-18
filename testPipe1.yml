@@ -4,8 +4,8 @@ pipelines:
     steps:
       - name: testBashStep
         type: Bash
-#         configuration:
-#           nodePool: dynamic_u16
+        configuration:
+          nodePool: centOS8
         execution:
           onExecute:
             - echo "hello"
