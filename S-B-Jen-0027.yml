@@ -14,14 +14,13 @@ pipelines:
       - name: S_B_Jen_0003
         type: Jenkins
         configuration:
-          priority: 4
           jenkinsJobName: testPipeline
           integrations:
             - name: S_B_Jenkins
       - name: S_B_Jen_0001
         type: Jenkins
         configuration:
-          priority: 3
+          priority: 10000
           inputSteps: 
             - name: S_B_Jen_0003
           jenkinsJobName: testPipeline
@@ -30,7 +29,7 @@ pipelines:
       - name: S_B_Jen_0002
         type: Jenkins
         configuration:
-          priority: 2
+          priority: 0
           inputSteps: 
             - name: S_B_Jen_0003
           jenkinsJobName: testPipeline
