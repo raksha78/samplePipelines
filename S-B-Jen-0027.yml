@@ -6,7 +6,7 @@ pipelines:
         configuration:
           jenkinsJobName: sampleJob  
           integrations:
-            - name: jenkins
+            - name: S_B_Jenkins
 # pipelines:
 #   - name: S_B_Jen_0003_pipelines
 
