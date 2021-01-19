@@ -8,29 +8,29 @@
 #           integrations:
 #             - name: S_B_Jenkins
 
-pipelines:
-  - name: testJenkinsTrigger
-    steps:
-      - name: testStepJenkins
-        type: Jenkins
-        configuration:
-          jenkinsJobName: foo/
-          integrations:
-            - name: S_B_Jenkins
 # pipelines:
 #   - name: testJenkinsTrigger
 #     steps:
 #       - name: testStepJenkins
 #         type: Jenkins
 #         configuration:
-#           jenkinsJobName: multiBranch  
-#           jenkinsBranchName: jenkin1
-#           buildParameters:
-#            runNumber: 1
-#            imageName: test
-#            imageTag: test
+#           jenkinsJobName: foo/job
 #           integrations:
 #             - name: S_B_Jenkins
+pipelines:
+  - name: testJenkinsTrigger
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+          jenkinsJobName: foo/bar/multiBranch  
+          jenkinsBranchName: jenkin1
+          buildParameters:
+           runNumber: 1
+           imageName: test
+           imageTag: test
+          integrations:
+            - name: S_B_Jenkins
 
 # pipelines:
 #   - name: S_B_Jen_
