@@ -14,7 +14,7 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          jenkinsJobName: foo/job
+          jenkinsJobName: foo/
           integrations:
             - name: S_B_Jenkins
 # pipelines:
