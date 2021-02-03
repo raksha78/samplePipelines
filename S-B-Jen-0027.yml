@@ -60,7 +60,7 @@ pipelines:
         configuration:
           priority: 10000
           inputSteps: 
-            - name: S_B_Jen_0003
+            - name: S_B_Jen
           jenkinsJobName: testPipeline
           integrations:
             - name: S_B_Jenkins
@@ -69,7 +69,7 @@ pipelines:
         configuration:
           priority: 0
           inputSteps: 
-            - name: S_B_Jen_0003
+            - name: S_B_Jen
           jenkinsJobName: testPipeline
           integrations:
             - name: S_B_Jenkins
