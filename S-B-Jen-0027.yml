@@ -34,6 +34,8 @@
 
 pipelines:
   - name: S_B_Jen_
+    configuration:
+      nodePool: dynamicNP
     steps:
       - name: S_B_Jen_0051_1
         type: Jenkins
