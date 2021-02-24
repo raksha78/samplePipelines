@@ -5,6 +5,6 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          jenkinsJobName: testPipeline  
+          jenkinsJobName: multiBranch  
           integrations:
             - name: S_B_Jenkins
