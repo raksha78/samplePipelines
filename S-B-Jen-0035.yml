@@ -5,8 +5,8 @@ resources:
       key: value
 pipelines:
   - name: testJen
-    configuration: 
-      nodePool: dynamicNP
+#     configuration: 
+#       nodePool: dynamicNP
     steps:
       - name: bashStep
         type: Bash
