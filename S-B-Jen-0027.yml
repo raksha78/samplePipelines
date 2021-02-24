@@ -42,7 +42,7 @@ pipelines:
         configuration:
           jenkinsJobName: testPipeline 
 #           jenkinsJobName: var_freestyle_proj
-          timeoutSeconds: 1
+#           timeoutSeconds: 1
           buildParameters:
             run1: 'test1frombash'
             run2: ${run_number}
