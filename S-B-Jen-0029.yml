@@ -1,5 +1,7 @@
 pipelines:
   - name: testJenkins
+    configuration:
+      nodePool: dynamicNP
     steps:
       - name: reqStepJenkins
         type: Jenkins
