@@ -40,8 +40,8 @@ pipelines:
       - name: S_B_Jen_0051_1
         type: Jenkins
         configuration:
-#           jenkinsJobName: testPipeline 
-          jenkinsJobName: var_freestyle_proj
+          jenkinsJobName: testPipeline 
+#           jenkinsJobName: var_freestyle_proj
           buildParameters:
             run1: 'test1frombash'
             run2: ${run_number}
