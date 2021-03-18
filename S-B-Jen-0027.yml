@@ -34,18 +34,18 @@
 
 pipelines:
   - name: S_B_Jen_
-#     configuration:
-#       nodePool: dynamicNP
+    configuration:
+      nodePool: u16dynamic1
     steps:
-      - name: S_B_Jen_0051_1
+      - name: S_B_Jen_1
         type: Jenkins
         configuration:
           jenkinsJobName: testPipeline 
 #           jenkinsJobName: var_freestyle_proj
 #           timeoutSeconds: 1
-          buildParameters:
-            run1: 'test1frombash'
-            run2: ${run_number}
+#           buildParameters:
+#             run1: 'test1frombash'
+#             run2: ${run_number}
           integrations:
             - name: S_B_Jenkins 
 
