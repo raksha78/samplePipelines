@@ -40,8 +40,8 @@ pipelines:
       - name: S_B_Jen_1
         type: Jenkins
         configuration:
-#           jenkinsJobName: testPipeline 
-          jenkinsJobName: var_freestyle_proj
+          jenkinsJobName: testPipeline 
+#           jenkinsJobName: var_freestyle_proj
 #           timeoutSeconds: 1
 #           buildParameters:
 #             run1: 'test1frombash'
