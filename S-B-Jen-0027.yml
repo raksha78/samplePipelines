@@ -34,8 +34,8 @@
 
 pipelines:
   - name: S_B_Jen
-    configuration:
-      nodePool: u20dynamic
+#     configuration:
+#       nodePool: u20dynamic
     steps:
       - name: S_B_Jen_1
         type: Jenkins
