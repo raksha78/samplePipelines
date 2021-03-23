@@ -33,42 +33,32 @@
 #           integrations:
 #             - name: S_B_Jenkins
 
-# pipelines:
-#   - name: S_B_Jen
-# #     configuration:
-# #       nodePool: u20dynamic
-#     steps:
-#       - name: S_B_Jen_1
-#         type: Jenkins
-#         configuration:
+pipelines:
+  - name: S_B_Jen
+#     configuration:
+#       nodePool: u20dynamic
+    steps:
+      - name: S_B_Jen_step
+        type: Jenkins
+        configuration:
 #           jenkinsJobName: testPipeline 
-# #           jenkinsJobName: var_freestyle_proj
-# #           timeoutSeconds: 1
-# #           buildParameters:
-# #             run1: 'test1frombash'
-# # #             run2: ${run_number}
-# #             run2: 100
+          jenkinsJobName: validate
+#           jenkinsJobName: var_freestyle_proj
+#           timeoutSeconds: 1
 #           buildParameters:
+#             run1: 'test1frombash'
+# #             run2: ${run_number}
+#             run2: 100
+          buildParameters:
+            project_name: "${project_name}"
+            project_id: "${project_id}"
+            project_key: "${project_key}"
+            step_url: "${step_url}"
 #             imageName: ${res_app_docker_imageName}
 #             imageTag: ${res_app_docker_imageTag}
 #             environment: "test"
-#           integrations:
-#             - name: S_B_Jenkins 
-
-pipelines:
-  - name: Jenkins_pipeline
-    steps:
-      - name: jenkins
-        type: Jenkins
-          configuration:
-            jenkinsJobName: validate
-            integrations:
-              - name: S_B_Jenkins
-            buildParameters:
-              project_name: "${project_name}"
-              project_id: "${project_id}"
-              project_key: "${project_key}"
-              step_url: "${step_url}"
+          integrations:
+            - name: S_B_Jenkins 
 
 # pipelines:
 #   - name: S_B_Jen_pipelines
