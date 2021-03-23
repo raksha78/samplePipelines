@@ -57,9 +57,9 @@
 
 pipelines:
   - name: Jenkins_pipeline
-     steps:
-       - name: jenkins
-          type: Jenkins
+    steps:
+      - name: jenkins
+        type: Jenkins
           configuration:
             jenkinsJobName: validate
             integrations:
