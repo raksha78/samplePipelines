@@ -24,8 +24,8 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-#           jenkinsJobName: foo/bar/multiBranch  
-          jenkinsJobName: foo_multibranch
+          jenkinsJobName: foo/bar/multiBranch  
+#           jenkinsJobName: foo_multibranch
           jenkinsBranchName: jenkin1
           buildParameters:
            runNumber: 1
