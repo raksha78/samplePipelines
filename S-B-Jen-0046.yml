@@ -4,6 +4,6 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-          jenkinsJobName: var_freestyle_proj
+          jenkinsJobName: demo
           integrations:
             - name: S_B_Jenkins
