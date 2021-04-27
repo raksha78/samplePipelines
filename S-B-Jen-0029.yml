@@ -20,7 +20,7 @@ pipelines:
         configuration:
           inputSteps:
             - name: reqStepJenkins
-          jenkinsJobName: testPipelineUpdated  
+          jenkinsJobName: testPipeline  
           integrations:
             - name: S_B_Jenkins
       
