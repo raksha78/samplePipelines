@@ -18,49 +18,49 @@
 #           integrations:
 #             - name: S_B_Jenkins
 
-# pipelines:
-#   - name: testJenkinsTrigger
-#     steps:
-#       - name: testStepJenkins
-#         type: Jenkins
-#         configuration:
-# #           jenkinsJobName: foo/bar/multiBranch  
-# #           jenkinsJobName: foo_multibranch
-# #           jenkinsBranchName: jenkin1
-#           jenkinsJobName: var/etc/pipeline
-#           buildParameters:
-#            runNumber: 1
-#            imageName: test
-#            imageTag: test
-#           integrations:
-#             - name: S_B_Jenkins
-
 pipelines:
-  - name: S_B_Jen
-#     configuration:
-#       nodePool: u20dynamic
+  - name: testJenkinsTrigger
     steps:
-      - name: S_B_Jen_step
+      - name: testStepJenkins
         type: Jenkins
         configuration:
-#           jenkinsJobName: testPipeline 
-          jenkinsJobName: validate
-#           jenkinsJobName: var_freestyle_proj
-#           timeoutSeconds: 1
-#           buildParameters:
-#             run1: 'test1frombash'
-# #             run2: ${run_number}
-#             run2: 100
+#           jenkinsJobName: foo/bar/multiBranch  
+#           jenkinsJobName: foo_multibranch
+#           jenkinsBranchName: jenkin1
+          jenkinsJobName: var/etc/pipeline
           buildParameters:
-            project_name: "${project_name}"
-            project_id: "${project_id}"
-            project_key: "${project_key}"
-            step_url: "${step_url}"
-#             imageName: ${res_app_docker_imageName}
-#             imageTag: ${res_app_docker_imageTag}
-#             environment: "test"
+           runNumber: 1
+           imageName: test
+           imageTag: test
           integrations:
-            - name: S_B_Jenkins 
+            - name: S_B_Jenkins
+
+# pipelines:
+#   - name: S_B_Jen
+# #     configuration:
+# #       nodePool: u20dynamic
+#     steps:
+#       - name: S_B_Jen_step
+#         type: Jenkins
+#         configuration:
+# #           jenkinsJobName: testPipeline 
+#           jenkinsJobName: validate
+# #           jenkinsJobName: var_freestyle_proj
+# #           timeoutSeconds: 1
+# #           buildParameters:
+# #             run1: 'test1frombash'
+# # #             run2: ${run_number}
+# #             run2: 100
+#           buildParameters:
+#             project_name: "${project_name}"
+#             project_id: "${project_id}"
+#             project_key: "${project_key}"
+#             step_url: "${step_url}"
+# #             imageName: ${res_app_docker_imageName}
+# #             imageTag: ${res_app_docker_imageTag}
+# #             environment: "test"
+#           integrations:
+#             - name: S_B_Jenkins 
 
 # pipelines:
 #   - name: S_B_Jen_pipelines
