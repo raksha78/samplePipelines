@@ -27,11 +27,12 @@ pipelines:
 #           jenkinsJobName: foo/bar/multiBranch  
 #           jenkinsJobName: foo_multibranch
 #           jenkinsBranchName: jenkin1
-          jenkinsJobName: var/etc/pipeline
-          buildParameters:
-           runNumber: 1
-           imageName: test
-           imageTag: test
+#           jenkinsJobName: var/etc/pipeline
+          jenkinsJobName: failPipeline
+#           buildParameters:
+#            runNumber: 1
+#            imageName: test
+#            imageTag: test
           integrations:
             - name: S_B_Jenkins
 
