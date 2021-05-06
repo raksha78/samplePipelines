@@ -24,12 +24,12 @@ pipelines:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-#           jenkinsJobName: foo/bar/multiBranch  
+          jenkinsJobName: foo/bar/multiBranch  
 #           jenkinsJobName: foo_multibranch
-#           jenkinsBranchName: jenkin1
+          jenkinsBranchName: jenkin1
 #           jenkinsJobName: var/etc/pipeline
 #           jenkinsJobName: failPipeline
-          jenkinsJobName: var_freestyle_proj
+#           jenkinsJobName: var_freestyle_proj
 #           buildParameters:
 #            runNumber: 1
 #            imageName: test
