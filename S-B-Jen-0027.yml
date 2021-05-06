@@ -18,23 +18,24 @@
 #           integrations:
 #             - name: S_B_Jenkins
 
-# pipelines:
-#   - name: testJenkinsTrigger
-#     steps:
-#       - name: testStepJenkins
-#         type: Jenkins
-#         configuration:
-# #           jenkinsJobName: foo/bar/multiBranch  
-# #           jenkinsJobName: foo_multibranch
-# #           jenkinsBranchName: jenkin1
-# #           jenkinsJobName: var/etc/pipeline
+pipelines:
+  - name: testJenkinsTrigger
+    steps:
+      - name: testStepJenkins
+        type: Jenkins
+        configuration:
+#           jenkinsJobName: foo/bar/multiBranch  
+#           jenkinsJobName: foo_multibranch
+#           jenkinsBranchName: jenkin1
+#           jenkinsJobName: var/etc/pipeline
 #           jenkinsJobName: failPipeline
-# #           buildParameters:
-# #            runNumber: 1
-# #            imageName: test
-# #            imageTag: test
-#           integrations:
-#             - name: S_B_Jenkins
+          jenkinsJobName: var_freestyle_proj
+#           buildParameters:
+#            runNumber: 1
+#            imageName: test
+#            imageTag: test
+          integrations:
+            - name: S_B_Jenkins
 
 # pipelines:
 #   - name: S_B_Jen
@@ -63,30 +64,30 @@
 #           integrations:
 #             - name: S_B_Jenkins 
 
-pipelines:
-  - name: S_B_Jen_pipelines
-    steps:
-      - name: S_B_Jen
-        type: Jenkins
-        configuration:
-          jenkinsJobName: testPipeline
-          integrations:
-            - name: S_B_Jenkins
-      - name: S_B_Jen_0001
-        type: Jenkins
-        configuration:
-          priority: 10000
-          inputSteps: 
-            - name: S_B_Jen
-          jenkinsJobName: testPipeline
-          integrations:
-            - name: S_B_Jenkins
-      - name: S_B_Jen_0002
-        type: Jenkins
-        configuration:
-          priority: 0
-          inputSteps: 
-            - name: S_B_Jen
-          jenkinsJobName: testPipeline
-          integrations:
-            - name: S_B_Jenkins
+# pipelines:
+#   - name: S_B_Jen_pipelines
+#     steps:
+#       - name: S_B_Jen
+#         type: Jenkins
+#         configuration:
+#           jenkinsJobName: testPipeline
+#           integrations:
+#             - name: S_B_Jenkins
+#       - name: S_B_Jen_0001
+#         type: Jenkins
+#         configuration:
+#           priority: 10000
+#           inputSteps: 
+#             - name: S_B_Jen
+#           jenkinsJobName: testPipeline
+#           integrations:
+#             - name: S_B_Jenkins
+#       - name: S_B_Jen_0002
+#         type: Jenkins
+#         configuration:
+#           priority: 0
+#           inputSteps: 
+#             - name: S_B_Jen
+#           jenkinsJobName: testPipeline
+#           integrations:
+#             - name: S_B_Jenkins
