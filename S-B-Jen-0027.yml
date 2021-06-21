@@ -35,8 +35,8 @@ pipelines:
 #            runNumber: 1
 #            imageName: test
 #            imageTag: test
-#           integrations:
-#             - name: S_B_Jenkins
+          integrations:
+            - name: S_B_Jenkins
 
 # pipelines:
 #   - name: S_B_Jen
