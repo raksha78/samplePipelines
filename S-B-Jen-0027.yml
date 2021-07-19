@@ -25,16 +25,16 @@ pipelines:
         type: Jenkins
         configuration:
 #           jenkinsJobName: foo/bar/multiBranch  
-#           jenkinsJobName: foo_multibranch
-#           jenkinsBranchName: jenkin1
-          jenkinsJobName: var/etc/pipeline
+          jenkinsJobName: foo_multibranch
+          jenkinsBranchName: jenkin1
+#           jenkinsJobName: var/etc/pipeline
 #           jenkinsJobName: testPipeline
 #           timeoutSeconds: 1
 #           jenkinsJobName: var_freestyle_proj
-#           buildParameters:
-#            runNumber: 1
-#            imageName: test
-#            imageTag: test
+          buildParameters:
+           runNumber: 1
+           imageName: test
+           imageTag: test
           integrations:
             - name: S_B_Jenkins
 
