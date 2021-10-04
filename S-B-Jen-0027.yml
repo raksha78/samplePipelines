@@ -63,7 +63,7 @@ pipelines:
 #             imageTag: ${res_app_docker_imageTag}
 #             environment: "test"
           integrations:
-            - name: S_B_Jenkins
+            - name: jtest_S_B_Jenkins
 
 
 
