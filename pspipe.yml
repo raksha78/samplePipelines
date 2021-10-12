@@ -4,7 +4,7 @@ pipelines:
       - name: S_PS
         type: PowerShell
         configuration:
-          nodePool: second_win_2019
+          nodePool: win_2019
         execution:
           onStart:
             - echo "hello"
