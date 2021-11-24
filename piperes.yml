@@ -1,0 +1,26 @@
+resources:
+  - name: gitresourcenm1
+    type: GitRepo
+    configuration:
+      gitProvider: github_neha
+      path: neha-mishraa/pipelines
+      buildOn:
+         commit: true
+         pullRequestCreate: true
+         pullRequestClose: true
+         releaseCreate: true
+         tagCreate: true
+pipelines:
+  - name: testPipelineRel1
+    steps:
+      - name: testStep
+        type: Bash
+        configuration:
+          inputResources:
+            - name: gitresourcenm1
+        execution:
+           onStart:
+            - echo "executing onStart"
+           onExecute:
+             - echo "executing onExecute"
+             - pushd $res_gitresourcenm1_resourcePath
