@@ -8,35 +8,36 @@
 #           integrations:
 #             - name: S_B_Jenkins
 
-# pipelines:
-#   - name: testJenkinsTrigger
-#     steps:
-#       - name: testStepJenkins
-#         type: Jenkins
-#         configuration:
-#           jenkinsJobName: foo/job
-#           integrations:
-#             - name: S_B_Jenkins
-
 pipelines:
   - name: testJenkinsTrigger
     steps:
       - name: testStepJenkins
         type: Jenkins
         configuration:
-#           jenkinsJobName: foo/bar/multiBranch  
-#           jenkinsJobName: foo_multibranch
-#           jenkinsBranchName: jenkin1
-#           jenkinsJobName: var/etc/pipeline
-          jenkinsJobName: testPipeline
-#           timeoutSeconds: 1
-#           jenkinsJobName: var_freestyle_proj
-#           buildParameters:
-#            runNumber: 1
-#            imageName: test
-#            imageTag: test
+          jenkinsJobName: testFolder/job/multibranch
+          jenkinsBranchName: branchwitha/slash
           integrations:
             - name: S_B_Jenkins
+
+# pipelines:
+#   - name: testJenkinsTrigger
+#     steps:
+#       - name: testStepJenkins
+#         type: Jenkins
+#         configuration:
+# #           jenkinsJobName: foo/bar/multiBranch  
+# #           jenkinsJobName: foo_multibranch
+# #           jenkinsBranchName: jenkin1
+# #           jenkinsJobName: var/etc/pipeline
+#           jenkinsJobName: testPipeline
+# #           timeoutSeconds: 1
+# #           jenkinsJobName: var_freestyle_proj
+# #           buildParameters:
+# #            runNumber: 1
+# #            imageName: test
+# #            imageTag: test
+#           integrations:
+#             - name: S_B_Jenkins
 
 # pipelines:
 #   - name: S_B_Jen
