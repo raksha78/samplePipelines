@@ -7,7 +7,9 @@ pipelines:
           inputSteps:
             - name: reqStepJenkins
           buildParameters:
-            jfrogPipelineRun: "${run_number}"
+            runNumber: 1
+            imageName: test
+            imageTag: test
           jenkinsJobName: testPipeline  
           integrations:
             - name: S_B_Jenkins
