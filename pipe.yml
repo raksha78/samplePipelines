@@ -7,7 +7,7 @@ pipelines:
           pipelineName: scanner_pipeline
           stepName: scan_it
           integrations:
-            - name: art_v
+            - name: platform
           environmentVariables:
             scan_target:
               default: "hello-world"
