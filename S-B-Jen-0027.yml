@@ -48,7 +48,7 @@ pipelines:
         type: Jenkins
         configuration:
 #           jenkinsJobName: testPipeline 
-          jenkinsJobName: validate
+          jenkinsJobName: pipe_test
 #           jenkinsJobName: var_freestyle_proj
 #           timeoutSeconds: 1
 #           buildParameters:
