@@ -62,7 +62,7 @@ pipelines:
             step_url: "${step_url}"
 #             imageName: ${res_app_docker_imageName}
 #             imageTag: ${res_app_docker_imageTag}
-#             environment: "test"
+            environment: "test"
           integrations:
             - name: S_B_Jenkins
 
