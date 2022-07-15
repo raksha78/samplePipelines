@@ -6,7 +6,6 @@ pipelines:
         configuration:
           pipelineName: scanner_pipeline
           stepName: scan_it
-          projectKey: main
           integrations:
             - name: platform
           environmentVariables:
