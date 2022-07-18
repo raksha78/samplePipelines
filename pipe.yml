@@ -4,7 +4,7 @@ pipelines:
       - name: scan_controller
         type: TriggerPipeline
         configuration:
-          pipelineName: scanner_pipeline
+          pipelineName: scanner_pipeline_01
           stepName: scan_it
           integrations:
             - name: platform
@@ -24,7 +24,7 @@ pipelines:
           onComplete:
             - echo "Final status is $nested_run_status"
  
-  - name: scanner_pipeline
+  - name: scanner_pipeline_01
     steps:
       - name: scan_it
         type: Bash
