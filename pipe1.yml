@@ -1,0 +1,27 @@
+pipelines:
+  - name: S_Matrix_0029
+    steps:
+      - name: bash_step
+        type: Bash
+        execution:
+          onExecute:
+             - echo "Hi from bash step"
+      - name: S_Matrix_0029
+        type: Matrix
+        stepMode: Bash
+        configuration:
+          inputSteps:
+            - name: bash_step
+        stepletMultipliers:
+          environmentVariables:
+            - animal: dog
+              bird: sparrow
+            - animal: cat
+              bird: crow
+            - animal: cow
+              bird: parrot
+        execution:
+          onExecute:
+            - echo "Executing matrix step on ${steplet_id}"
+            - sleep 1m
+            - echo "Variation animal = ${animal}, bird = ${bird}"
